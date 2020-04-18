@@ -1,12 +1,13 @@
 #' Demo of WHAT IS THIS DATA
 #'
-#' @description demo of the TELL US ABOUT THIS DATA IN BRIEF
+#' @description daily summary of Canadian Coronavirus (COVID-19) cases. 
+#' 
 #'
 #'
 #' @format A tibble object
-#' @source WHAT IS YOUR SOURCE
-#' @keywords datasets coronavirus COVID19 DATASETNAME
-#' @details TELL US MORE
+#' @source \href{https://github.com/ishaberry/Covid19Canada}{website}
+#' @keywords datasets coronavirus COVID19 DATASETNAME Canada
+#' @details This package includes tidy data of Canadian COVID-19 cases. 
 #'
 #' To get the latest data, use \code{\link{refresh_YOURPACKAGENAME}}
 #' @examples
@@ -15,4 +16,4 @@
 #'
 #' #Show us something cool
 #' 
-"DATASETNAME_demo"
+"CanadaC19"

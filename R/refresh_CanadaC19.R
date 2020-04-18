@@ -1,10 +1,10 @@
-#' SNAPPY TITLE ABOUT THIS FUNCTION
+#' Canadian COVID-19 Data
 #'
-#' @description Updates the WHAT IS THIS DATASET
+#' @description Updates the Canadian COVID-19 Cases. 
 #'
-#' @details LONGER DESCRIPTION OF WHAT IS GOING ON HERE, THE DATA, IT'S LICENSE, ETC.
+#' @details This package scrapes Canadian reported cases from a repository that collects publically available data on cases across Canada. 
 #'
-#' @source WHERE DID YOU GET IT
+#' @source \href{https://github.com/ishaberry/Covid19Canada}{Covid19Canada}
 #' @source \href{https://github.com/Covid19R/documentation}{covid19R documentation}
 #'
 #' @return A tibble object
@@ -15,7 +15,7 @@
 #' * location_code_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use `XXXX`
 #' * data_type - the type of data in that given row using the covid19R controlled vocabulary. Includes WHAT DATA TYPES ARE HERE?
 #' * value - number of cases of each data type
-#' @export refresh_YOURPACKAGENAME
+#' @export refresh_CanadaC19
 #'
 #' @examples
 #' \dontrun{
@@ -26,9 +26,10 @@
 refresh_YOURPACKAGENAME <- function() {
   
   #where is the data coming from
-  url <- ""
+  url <- "https://raw.githubusercontent.com/ishaberry/Covid19Canada/master/cases.csv"
 
   # load the data
+  ### STOPPED HERE 4/17/2020
   
   # clean the data if needed
   
