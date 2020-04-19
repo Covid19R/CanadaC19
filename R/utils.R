@@ -10,6 +10,17 @@
 #' @usage lhs \%>\% rhs
 NULL
 
-# Add other helper code below here. Think about things like
-# generic methods to reshape data, helper methods to look up codes
-# or integrate with spatial information, specific scraping code, and more
+url <- "https://raw.githubusercontent.com/ishaberry/Covid19Canada/master/cases.csv"
+
+read_data <- function() {
+  suppressWarnings(
+    readr::read_csv(
+      url,
+      col_types = 
+        readr::cols(
+          date_report = readr::col_date(format = "%d-%m-%Y"),
+          report_week = readr::col_date(format = "%d-%m-%Y")
+        )
+    )
+  )
+}

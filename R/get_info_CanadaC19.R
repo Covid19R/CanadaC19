@@ -3,7 +3,7 @@
 #' @description Returns information about the datasets in this package for covid19R harvesting
 #'
 #' @return a tibble of information about the datasets in this package
-#' @export get_info_YOURPACKAGENAME
+#' @export get_info_CanadaC19
 #'
 #' @examples
 #' \dontrun{
@@ -12,23 +12,30 @@
 #' get_info_YOURPACKAGENAME()
 #' }
 #'
-get_info_YOURPACKAGENAME <- function() {
+get_info_CanadaC19 <- function() {
+  latest_data <- 
+    refresh_CanadaC19_cases(verbose = FALSE)
 
-  tibble::tribble(
-    ~data_set_name, ~package_name, ~function_to_get_data,
-    ~data_details, ~data_url, ~license_url,
-    ~data_types, ~location_types,
-    ~spatial_extent, ~has_geospatial_info,
-
-    "DATASET_NAME",
-    "YOURPACKAGENAME",
-    "refresh_YOURPACKAGENAME_*",
-    "DESCRIPTION OF THE DATA",
-    "URL THIS DATASET COMES FROM",
-    "URL OF THE LICENSE",
-    "DATA_TYPE_1,DATA_TYPE_2,...", #COMMA SEPARATED STRING OF DATA TYPES
-    "LOCATION_TYPE_1,LOCATION_TYPE_2", #COMMA SEPARATED STRING OF LOCATION TYPES
-    "EXTENT", #HOW LARGE IS THE AREA COVERED BY THE WHOLE DATASET? COUNTRY? CONTINENT? WORLD? OTHER?
-    FALSE #IS THERE GEOSPATIAL INFORMATION, E.G. LAT/LONG? TRUE/FALSE
+  dplyr::tribble(
+    data_set_name = "CanadaC19_cases",
+    package_name = "CanadaC19",
+    function_to_get_data = "refresh_CanadaC19_cases",
+    data_details = "Open Source data from multiple public reporting data throughout Canada. For more, see https://github.com/ishaberry/Covid19Canada.",
+    data_url = "https://raw.githubusercontent.com/ishaberry/Covid19Canada/master/cases.csv",
+    license_url = "https://github.com/debusklaneml/CanadaC19/blob/master/LICENSE",
+    data_types =
+      latest_data %>%
+      tidyr::drop_na(data_type) %>%
+      dplyr::pull(data_type) %>%
+      unique() %>%
+      stringr::str_c(collapse = ", "),
+    location_types =
+      latest_data %>%
+      tidyr::drop_na(location_type) %>%
+      dplyr::pull(location_type) %>%
+      unique() %>%
+      stringr::str_c(collapse = ", "),
+    spatial_extent = "country",
+    has_geospatial_info = FALSE
   )
 }

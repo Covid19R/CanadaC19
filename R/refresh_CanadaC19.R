@@ -1,6 +1,6 @@
 #' Canadian COVID-19 Data
 #'
-#' @description Updates the Canadian COVID-19 Cases. 
+#' @description Updates the Canadian COVID-19 cases.
 #'
 #' @details This package scrapes Canadian reported cases from a repository that collects publically available data on cases across Canada. 
 #'
@@ -23,18 +23,17 @@
 #' YOURPACKAGENAME_dat <- refresh_YOURPACKAGENAME()
 #' }
 #'
-refresh_YOURPACKAGENAME <- function() {
-  
-  #where is the data coming from
+refresh_CanadaC19_cases <- function() {
+
+  # where is the data coming from
   url <- "https://raw.githubusercontent.com/ishaberry/Covid19Canada/master/cases.csv"
 
   # load the data
-  ### STOPPED HERE 4/17/2020
-  
+
   # clean the data if needed
-  
+
   # reshape to data standard
-  
+
   # return the data
 }
 
