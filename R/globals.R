@@ -1,6 +1,15 @@
 globalVariables(
   c(
     # standard for all datasets
+    "case_id",
+    "provincial_case_id",
+    "travel_yn",
+    "locally_acquired",
+    "data_details",
+    "additional_info",
+    "travel_history_country",
+    "age",
+    "sex",
     "date",
     "location",
     "location_type",
@@ -16,6 +25,7 @@ globalVariables(
     "license_url",
     "data_types",
     "has_geospatial_info"
+    
 
     # unique to this dataset
 

@@ -1,6 +1,6 @@
 #' Demo of WHAT IS THIS DATA
 #'
-#' @description daily summary of Canadian Coronavirus (COVID-19) cases, mobidity, those in recovery, and in testing. . 
+#' @description daily summary of Canadian Coronavirus (COVID-19) cases. 
 #' 
 #'
 #'

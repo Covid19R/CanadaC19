@@ -23,17 +23,10 @@
 #' YOURPACKAGENAME_dat <- refresh_YOURPACKAGENAME()
 #' }
 #'
-refresh_CanadaC19_cases <- function() {
+refresh_CanadaC19_cases <- function(verbose = TRUE) {
+  if (verbose) message(glue::glue("Downloading raw data from {url}."))
 
-  # where is the data coming from
-  url <- "https://raw.githubusercontent.com/ishaberry/Covid19Canada/master/cases.csv"
-
-  # load the data
-
-  # clean the data if needed
-
-  # reshape to data standard
-
-  # return the data
+  read_data() %>%
+    clean_data()
 }
 
