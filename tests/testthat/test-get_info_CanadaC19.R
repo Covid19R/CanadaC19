@@ -13,9 +13,8 @@ info_col_names <-
   )
 
 test_that("get_info works", {
-  res <- get_info_YOURPACKAGENAME()
+  info <- get_info_CanadaC19()
 
-  expect_named(res, info_col_names)
+  expect_named(info, info_col_names)
 
-  expect_equal(nrow(res), 2)
 })

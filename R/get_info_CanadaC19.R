@@ -23,12 +23,12 @@ get_info_CanadaC19 <- function() {
     data_details = "Open Source data from multiple public reporting data throughout Canada. For more, see https://github.com/ishaberry/Covid19Canada.",
     data_url = "https://raw.githubusercontent.com/ishaberry/Covid19Canada/master/cases.csv",
     license_url = "https://github.com/debusklaneml/CanadaC19/blob/master/LICENSE",
-    data_type =
+    data_types =
       latest_data %>%
         tidyr::drop_na(data_type) %>%
         dplyr::pull(data_type) %>%
         unique(),
-    location_type =
+    location_types =
       latest_data %>%
         tidyr::drop_na(location_type) %>%
         dplyr::pull(location_type) %>%
@@ -37,3 +37,5 @@ get_info_CanadaC19 <- function() {
     has_geospatial_info = FALSE
   )
 }
+
+
