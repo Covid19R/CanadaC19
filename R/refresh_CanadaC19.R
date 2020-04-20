@@ -4,6 +4,8 @@
 #'
 #' @details This package scrapes Canadian reported cases from a repository that collects publically available data on cases across Canada. 
 #'
+#' @param verbose Should messages be displayed? 
+#'
 #' @source \href{https://github.com/ishaberry/Covid19Canada}{Covid19Canada}
 #' @source \href{https://github.com/Covid19R/documentation}{covid19R documentation}
 #'
@@ -15,14 +17,13 @@
 #' * location_code_type The type of standardized location code being used according to the covid19R controlled vocabulary. Here we use `XXXX`
 #' * data_type - the type of data in that given row using the covid19R controlled vocabulary. Includes WHAT DATA TYPES ARE HERE?
 #' * value - number of cases of each data type
-#' @export refresh_CanadaC19
+#' @export 
 #'
 #' @examples
 #' \dontrun{
-#' # update the data
-#' YOURPACKAGENAME_dat <- refresh_YOURPACKAGENAME()
+#' refresh_CanadaC19_cases()
 #' }
-#'
+
 refresh_CanadaC19_cases <- function(verbose = TRUE) {
   if (verbose) message(glue::glue("Downloading raw data from {url}."))
 

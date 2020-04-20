@@ -24,7 +24,10 @@ globalVariables(
     "data_url",
     "license_url",
     "data_types",
-    "has_geospatial_info"
+    "has_geospatial_info",
+    "date_report",
+    "province",
+    "case_source"
     
 
     # unique to this dataset

@@ -1,16 +1,15 @@
 #---------------------------
-# Code to update NY Times Datasets
+# Code to update CanadaC19 Datasets
 #---------------------------
 
 setwd(here::here())
-source("./R/refresh_YOURPACKAGENAME.R")
+source("./R/refresh_CanadaC19.R")
+soure("./R/utils.R")
 
-YOURPACKAGENAME_demo <- refresh_YOURPACKAGENAME()
+CanadaC19_demo <- refresh_CanadaC19_cases()
 
 #check it
-head(YOURPACKAGENAME_demo)
-
-#test with testthat
+head(CanadaC19_demo)
 
 #deploy data
-usethis::use_data(YOURPACKAGENAME_demo, overwrite = TRUE)
+usethis::use_data(CanadaC19_demo, overwrite = TRUE)

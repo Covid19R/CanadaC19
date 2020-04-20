@@ -9,9 +9,12 @@
 #' \dontrun{
 #'
 #' # get the dataset info from this package
-#' get_info_YOURPACKAGENAME()
+#' get_info_CanadaC19()
 #' }
 #'
+
+
+#' @describeIn get_info_CanadaC19 Basic information about the dataset. 
 get_info_CanadaC19 <- function() {
   latest_data <-
     refresh_CanadaC19_cases(verbose = FALSE)
