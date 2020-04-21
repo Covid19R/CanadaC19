@@ -16,66 +16,28 @@ knitr::opts_chunk$set(
 
 ## CanadaC19
 
-### Tests
-
-### Files to edit and things to do for release to the public
-- Readme.Rmd: We have provided a skeleton of your readme within this file. Use it and fill it in as needed. Feel free to modify as you'd like.
-
-- News.md: Sub in your R project name for the first release
-
-- Make a [pkgdown](https://pkgdown.r-lib.org/) site! This can be as simple as running `pkgdown::build_site()`, pushing the update, and making sure your repo settings are set to put up the website. Add the URL to your README and your github repo
-
-### Making your package a part of the Covid19R Project
-
-OK! You're there! It works, and your build is more or less clean (at least, only notes). Close your issue about developing a new package and... [file a new issue to onboard this package](https://github.com/Covid19R/covid19R/issues) with the onboarding template! We'll take a look, test it out, and if it's ready, we'll add it in! Nice work! (and if it's not, we'll help you fix it)
-
-### Submitting to CRAN
-- Use RStudio to build check your package until there are no errors, warnings, or notes, even! Run the suite of devtools checks provided in setupcode.R. If you pass everything, use devtools to submit (it's in the setupcode), as it will ask you additional questions.
-
-- Make sure your cran-comments.md file is up to date with info from your final check!
-
------------
-
-# YOUR_PACKAGE_NAME
-
 <!-- badges: start -->
 [![Lifecycle: maturing](https://img.shields.io/badge/lifecycle-maturing-orange.svg)](https://www.tidyverse.org/lifecycle/#maturing)
 [![CRAN status](https://www.r-pkg.org/badges/version/YOUR_PACKAGE)](https://CRAN.R-project.org/package=YOUR_PACKAGE)
 [![Travis build status](https://travis-ci.org/Covid19R/YOUR_PACKAGE.svg?branch=master)](https://travis-ci.org/USER_OR_ORG/YOUR_PACKAGE)
 <!-- badges: end -->
 
-The  YOUR_PACKAGE package harvests the data made freely available by the XXX. See USEFUL_URL_ABOUT_DATA for more.
+The  CanadaC19 package harvests the data made freely available by the this [repository](https://github.com/ishaberry/Covid19Canada).
 
 ## Installation
 
 ONLY INCLUDE IF SUBMITTED TO/ON CRAN You can install the released version of covid19nytimes from [CRAN](https://CRAN.R-project.org) with:
 
 ``` {r install, eval=FALSE}
-install.packages("YOUR_PACKAGE")
-```
-
-Or the latest development version from [github](https://github.com/USER_OR_ORG/YOUR_PACKAGE)
-
-```{r install_github, eval = FALSE}
-devtools::install_github("USER_OR_ORG/YOUR_PACKAGE")
-```
-
-## Data
-
-The package has the data from XXXXXX. The package comes with static data that was downloaded at the time of the last package update.
-
-```{r head_of_data, eval = FALSE}
-library(YOUR_LIBRARY_NAME)
-
-head(DATA) %>% knitr::kable()
-
+install.packages("CanadaC19")
 ```
 
 ## Getting the Most Up to Date Data
 
 To get the most updated data, run the following functions
 
-```{r refresh}
+```{r refresh, eval=FALSE}
+new_data <- refresh_CanadaC19_cases()
 ```
 
 ## Columns
@@ -91,7 +53,3 @@ The data follows the [covid19R standard for tidy Covid-19 data](https://covid19r
 * value - number of cases of each data type
 * OTHER COLUMNS - WHAT THEY MEAN
 
-## Sample visualization
-
-```{r example_plot}
-```
