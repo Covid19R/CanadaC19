@@ -6,7 +6,7 @@ Authors@R:
            family = "DeBusk-Lane",
            role = c("aut", "cre"),
            email = "mldebusklane@gmail.com")
-Description: This packages pulls data from a repository that includes locally/publically available case data of COVID-19 in Canada. Raw data is available here: <https://github.com/ishaberry/Covid19Canada>.
+Description: This packages pulls data from a repository that includes open-source case data of COVID-19 in Canada. Raw data is available here: <https://github.com/ishaberry/Covid19Canada>.
 License: MIT + file LICENSE
 URL: https://github.com/debusklaneml/CanadaC19
 Depends:
