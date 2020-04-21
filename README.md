@@ -26,7 +26,7 @@ Get the latest development version from
 [github](https://github.com/debusklaneml/CanadaC19)
 
 ``` r
-devtools::install_github("USER_OR_ORG/YOUR_PACKAGE")
+devtools::install_github("debusklaneml/CanadaC19")
 ```
 
 ## Getting the Most Up to Date Data
