@@ -6,3 +6,4 @@
 # CanadaC19 0.1.1
 
 * Fully standardized columns for the Covid19R requirements. 
+* Initiated the pkgdown site. 
