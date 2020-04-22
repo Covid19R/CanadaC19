@@ -2,7 +2,7 @@
 % Please edit documentation in R/refresh_CanadaC19.R
 \name{refresh_CanadaC19_cases}
 \alias{refresh_CanadaC19_cases}
-\title{Canadian COVID-19 Data}
+\title{Refresh the Canadian COVID-19 Data.}
 \source{
 \href{https://github.com/ishaberry/Covid19Canada}{Covid19Canada}
 

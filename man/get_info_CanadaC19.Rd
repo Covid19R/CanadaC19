@@ -2,15 +2,15 @@
 % Please edit documentation in R/get_info_CanadaC19.R
 \name{get_info_CanadaC19}
 \alias{get_info_CanadaC19}
-\title{Get information about the datasets provided by YOURPACKAGENAME}
+\title{Get information about the dataset provided by CanadaC19.}
 \usage{
 get_info_CanadaC19()
 }
 \value{
-a tibble of information about the datasets in this package
+a tibble of information about the datasets in this package.
 }
 \description{
-Returns information about the datasets in this package for covid19R harvesting
+Returns information about the datasets in this package for covid19R harvesting.
 }
 \section{Functions}{
 \itemize{
