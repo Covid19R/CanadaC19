@@ -1,8 +1,8 @@
-#' Get information about the datasets provided by YOURPACKAGENAME
+#' Get information about the dataset provided by CanadaC19.
 #'
-#' @description Returns information about the datasets in this package for covid19R harvesting
+#' @description Returns information about the datasets in this package for covid19R harvesting.
 #'
-#' @return a tibble of information about the datasets in this package
+#' @return a tibble of information about the datasets in this package.
 #' @export get_info_CanadaC19
 #'
 #' @examples
