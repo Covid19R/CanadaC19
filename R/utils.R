@@ -14,7 +14,7 @@ url <- "https://raw.githubusercontent.com/ishaberry/Covid19Canada/master/cases.c
 
 iso.location <- data.frame(
   location_code = c("CA-AB", "CA-BC", "CA-MB", "CA-NB", "CA-NL", "CA-NS", "CA-ON", "CA-PE", "CA-QC", "CA-SK", "CA-NT", "CA-NU", "CA-YT"),
-  location_code_type = "ISO 3166-2",
+  location_code_type = "iso_3166_2",
   province = c("Alberta", "BC", "Monitoba", "New Brunswick", "NL", "Nova Scotia", "Ontario", "PEI", "Quebec", "Saskatchewan", "NWT", "Repatriated", "Yukon")
 )
 
