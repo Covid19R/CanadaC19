@@ -1,4 +1,4 @@
-#' Canadian COVID-19 Data
+#' Refresh the Canadian COVID-19 Data.
 #'
 #' @description Updates the Canadian COVID-19 cases.
 #'
