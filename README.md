@@ -14,7 +14,9 @@ status](https://travis-ci.org/Covid19R/YOUR_PACKAGE.svg?branch=master)](https://
 <!-- badges: end -->
 
 The CanadaC19 package harvests the data made freely available by the
-this [repository](https://github.com/ishaberry/Covid19Canada).
+this [repository](https://github.com/ishaberry/Covid19Canada). This
+package is currently a component to the [Covid19R
+project](https://github.com/Covid19R).
 
 ## Installation (once on CRAN)
 
