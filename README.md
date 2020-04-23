@@ -3,16 +3,6 @@
 
 ## CanadaC19
 
-<!-- badges: start -->
-
-[![Lifecycle:
-maturing](https://img.shields.io/badge/lifecycle-maturing-orange.svg)](https://www.tidyverse.org/lifecycle/#maturing)
-[![CRAN
-status](https://www.r-pkg.org/badges/version/YOUR_PACKAGE)](https://CRAN.R-project.org/package=YOUR_PACKAGE)
-[![Travis build
-status](https://travis-ci.org/Covid19R/YOUR_PACKAGE.svg?branch=master)](https://travis-ci.org/USER_OR_ORG/YOUR_PACKAGE)
-<!-- badges: end -->
-
 The CanadaC19 package harvests the data made freely available by the
 this [repository](https://github.com/ishaberry/Covid19Canada). This
 package is currently a component to the [Covid19R
