@@ -37,6 +37,7 @@ clean_data <- function(tbl) {
       dplyr::mutate(
         location_type = "state",
         data_type = "cases_new",
+        value = 1,
         data_url = "https://github.com/ishaberry/Covid19Canada"
       ) %>%
       dplyr::select(
