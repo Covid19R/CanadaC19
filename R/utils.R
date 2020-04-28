@@ -37,7 +37,6 @@ clean_data <- function(tbl) {
       dplyr::mutate(
         location_type = "state",
         data_type = "cases_new",
-        value = 1,
         data_url = "https://github.com/ishaberry/Covid19Canada"
       ) %>%
       dplyr::select(
@@ -59,7 +58,10 @@ clean_data <- function(tbl) {
       dplyr::arrange(
         case_id
       ) %>%
-      dplyr::left_join(., iso.location, by = c("location" = "province"))
+      dplyr::left_join(., iso.location, by = c("location" = "province")) %>%
+      dplyr::mutate(
+        value = 1
+      )
   )
 }
 
