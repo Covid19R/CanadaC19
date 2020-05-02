@@ -1,6 +1,9 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
+[![Travis build
+status](https://travis-ci.com/debusklaneml/CanadaC19.svg?branch=master)](https://travis-ci.com/debusklaneml/CanadaC19)
+
 ## CanadaC19
 
 The CanadaC19 package harvests the data made freely available by the
