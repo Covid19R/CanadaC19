@@ -28,9 +28,5 @@ globalVariables(
     "date_report",
     "province",
     "case_source"
-    
-
-    # unique to this dataset
-
   )
 )

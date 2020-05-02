@@ -13,7 +13,10 @@ refresh_col_names <-
     "additional_info",
     "travel_history_country",
     "age",
-    "sex"
+    "sex",
+    "location_code",
+    "location_code_type",
+    "value"
   )
 
 test_that("Check if columns still populate!", {
