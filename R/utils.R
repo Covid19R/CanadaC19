@@ -58,7 +58,7 @@ clean_data <- function(tbl) {
       dplyr::arrange(
         case_id
       ) %>%
-      dplyr::left_join(., iso.location, by = c("location" = "province")) %>%
+      dplyr::left_join(iso.location, by = c("location" = "province")) %>%
       dplyr::mutate(
         value = 1
       )
