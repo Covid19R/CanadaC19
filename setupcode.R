@@ -25,6 +25,7 @@ use_package("tibble")
 
 #for release - checks!
 devtools::check_win_release()
+2
 devtools::release_checks()
 devtools::spell_check()
 devtools::check_rhub()
