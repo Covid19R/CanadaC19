@@ -30,7 +30,7 @@ read_data <- function() {
     )
   )
 }
-
+ 
 clean_data <- function(tbl) {
   suppressWarnings(
     tbl %>%
