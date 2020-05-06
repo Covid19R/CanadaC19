@@ -14,7 +14,18 @@ knitr::opts_chunk$set(
 )
 ```
 
+
+ <!--badges: start -->
+ 
 [![Travis build status](https://travis-ci.com/debusklaneml/CanadaC19.svg?branch=master)](https://travis-ci.com/debusklaneml/CanadaC19)
+[![CRAN\_Status\_Badge](https://www.r-pkg.org/badges/version/CanadaC19)](https://cran.r-project.org/package=CanadaC19)
+[![lifecycle](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://www.tidyverse.org/lifecycle/#experimental)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![GitHub commit](https://img.shields.io/github/last-commit/debusklaneml/CanadaC19)](https://github.com/debusklaneml/CanadaC19/commit/master)
+
+ <!--badges: end -->
+
+
 
 ## CanadaC19
 
